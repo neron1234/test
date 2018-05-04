@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.AppCenter.Distribute;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 using Xamarin.Forms;
 
@@ -18,8 +24,14 @@ namespace App6
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("android=f37460cc-6a34-4b46-9dcb-9e65ba4b19a8;" +
+                  "uwp={Your UWP App secret here};" +
+                  "ios={Your iOS App secret here}",
+                  typeof(Analytics), typeof(Crashes));
+
+            AppCenter.Start("ios={Your Xamarin iOS App Secret};android=f37460cc-6a34-4b46-9dcb-9e65ba4b19a8;", typeof(Distribute));
+            // Handle when your app starts
+        }
 
 		protected override void OnSleep ()
 		{

@@ -16,6 +16,7 @@ Global
 		App6\App6\App6.projitems*{9080ebf2-695a-4a2c-ad5a-e93000adbf68}*SharedItemsImports = 13
 		App6\App6\App6.projitems*{9301993d-b1a4-4f83-839b-d7cf03849bc4}*SharedItemsImports = 4
 		App6\App6\App6.projitems*{957b3e85-8587-4945-823f-2ea8c90f52e2}*SharedItemsImports = 4
+		App6\App6\App6.projitems*{c5ff0f14-328d-4245-b92c-72648f9b0372}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

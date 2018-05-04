@@ -1,7 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Microsoft.AppCenter.Distribute;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Foundation;
 using UIKit;
 
@@ -22,7 +27,8 @@ namespace App6.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+            Distribute.DontCheckForUpdatesInDebug();
+            global::Xamarin.Forms.Forms.Init ();
 			LoadApplication (new App6.App ());
 
 			return base.FinishedLaunching (app, options);
